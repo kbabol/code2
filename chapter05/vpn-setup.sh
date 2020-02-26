@@ -1,8 +1,8 @@
 #!/bin/bash -ex
 
-#param IPSEC_PSK the shared secret
-#param VPN_USER the vpn username
-#param VPN_PASSWORD the vpn password
+#param IPSEC_PSK wspoldzielony klucz tajny
+#param VPN_USER nazwa uzytkownika VPN
+#param VPN_PASSWORD haslo VPN
  
 PRIVATE_IP="$(curl -s http://169.254.169.254/latest/meta-data/local-ipv4)"
 PUBLIC_IP="$(curl -s http://169.254.169.254/latest/meta-data/public-ipv4)"
